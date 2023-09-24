@@ -1,0 +1,11 @@
+{
+  "name": "kkuiz",
+  "version": "1.0.0",
+  "description": "Quiz web app made for the purpose of college assignment.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "GineikaCC",
+  "license": "MIT"
+}
