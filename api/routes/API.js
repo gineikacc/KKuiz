@@ -12,14 +12,18 @@ router.get("/", function (req, res, next) {
   res.send("API is working properly");
 });
 
+router.get("/u", function (req, res, next) {
+  res.send(JSON.stringify(users));
+});
+
 router.get("/u/:user", function (req, res, next) {
   let user = users.find(
     (x) => x.name.toLowerCase() == req.params.user.toLowerCase()
   );
   if (user) {
-    res.send(JSON.stringify({ user, exists: true }));
+    res.send(JSON.stringify(user));
   } else {
-    res.send("{exists:false}");
+    res.send("{}");
   }
 });
 
